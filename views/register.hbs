@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+     <style>
+    label{
+        color: whitesmoke;
+    }
+
+    form{
+        display: block;
+        width: fit-content;
+        text-align: center;
+        margin:0 auto;
+    }
+    h1{
+        text-align: center;
+        margin:auto;
+    }
+    h3{
+        text-align: center;
+        margin:auto;
+    }
+    h3 a {
+        color: yellow;
+    }
+    </style>
+</head>
+<body>
+   <div class="logo" id="homepage"> <img src="../images/logo.png">HEALTH & DIET
+    </div>
+
+    <div class="topnav" id="mytopnav">
+
+        <a class="active"  href="/layout/index.html">Αρχικη</a>
+    <a href="/layout/services.html">Υπηρεσίες</a>
+    <a href="/layout/articles.html">Άρθρα</a>
+    <a href="/layout/diets.html">Δίαιτες</a>
+    <a href="#idcontact">Επικοινωνία</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a id="book" href="/layout/bookonline.html">BOOK ONLINE</a>
+    <a href="/login">Login</a>
+    </div>
+    <h1>
+        SignUp Page
+    </h1>
+    <form action="/register" method="POST">
+        <label for="username">UserName</label>
+        <input type="text" id="username" name="username">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <label for="phone">Mobile No:-</label>
+        <input type="text" name="phone" id="phone">
+        <label for="email">Email-</label>
+        <input type="text" name="email" id="email">
+        <button>Submit</button>
+    </form>
+    {{#if message }}
+        <h4 class="alert alert-danger mt-4">{{message}}</h4>
+    {{/if}}
+    
+
+    <div class="container-footer">
+        <div class="footer">
+            <div class="copyright">
+                ©2021 All rights reserved | <a href="index.html">Health & Diet</a>
+            </div>
+            <div class="address">
+                <h2>Ιωάννα Λινού</h2>
+                <p>Κωνσταντινουπόλεως 5 (4ος όροφος)</p>
+                <p>Μυτιλήνη, Λέσβος, 81100</p>
+                <p><strong>T:</strong> 2251103358 - 6936865437</p>
+                <p><strong>E-mail:</strong> janedoe@gmail.com</p><br>
+            </div>
+            <div class="information">
+                <a href="">More information</a> | <a href="">Terms and conditions</a>
+                <br>
+                <form action="/action_page.php">
+                    <a class="contact" id="idcontact">Επικοινωνία</a>
+                    <br>
+                    <label for="fname">Όνομα</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                    <label for="lname">Επίθετο</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+                    <label for="subject">Θέμα</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:170px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="socials">
+                <a href="https://www.facebook.com/Health-and-Diet-1182540145277143/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/lifestylesoln" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/calories.tips/?hl=el" class="fa fa-instagram"></a>
+                <a href="https://gr.pinterest.com/todayshow/healthy-eating/" class="fa fa-pinterest"></a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/src/script.js"></script>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Site made with Mobirise Website Builder v4.9.4, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <title>BOOK ONLINE</title>
+  <link href="/css/styles.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <div class="logo" id="homepage">
+    <a href="/layout/index.html" style="text-decoration : none; color : #ffffff;"> 
+        <img src="../images/logo.png">HEALTH & DIET
+    </a>
+  </div>
+
+  <div class="topnav" id="mytopnav">
+
+    <a  href="/layout/index.html">Αρχικη</a>
+    <a href="/layout/services.html">Υπηρεσίες</a>
+    <a href="/layout/articles.html">Άρθρα</a>
+    <a href="/layout/diets.html">Δίαιτες</a>
+    <a href="#idcontact">Επικοινωνία</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a id="book" href="/layout/bookonline.html">BOOK ONLINE</a>
+    <a href="/login">Login</a>
+  </div>
+  <!-- <div id="id01" class="modal">
+
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+        <img src="/images/img_avatar2.png" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+          class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div> -->
+  <div class="container align-center">
+    <h1>ΚΛΕΙΣΕ ΤΟ ΡΑΝΤΕΒΟΥ ΣΟΥ ONLINE</h1>
+    <hr>
+    <h3><em>Ο πιο εύκολος και γρήγορος τρόπος να κλείσεις το ραντεβού σου.
+        <br></em><br><em>Βρες τη μέρα και την ώρα που σε βολεύει!</em></h3>
+  </div>
+
+  <!-- <iframe src="https://healthanddiet.setmore.com/" width="100%" height="800" frameBorder="0"></iframe>-->
+
+<!-- ```````````````````````````````````````````````````````````````````` BOOK ``````````````````````````````````````````````````````````````````` -->
+
+<form class="bookForm" action="reservation.php" method="post">
+  <div class="elem-group">
+    <label for="name">Όνομα</label>
+    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+  </div>
+  <div class="elem-group">
+    <label for="phone">Τηλέφωνο επικοινωνίας</label>
+    <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+  </div>
+  <hr>
+  <div class="elem-group">
+    <label for="checkin-date">Ημερομηνία</label>
+    <input type="date" id="checkin-date" name="checkin" required>
+  </div>
+  <hr>
+  <div class="elem-group">
+    <label for="message">Επιπλέον Σχόλια</label>
+    <textarea id="message" name="visitor_message" placeholder="Γράψτε τα σχόλιά σας" required></textarea>
+  </div>
+  <button class="button2" type="submit">Κλείσε το ραντεβού</button>
+</form>
+
+<!-- ```````````````````````````````````````````````````````````````````` BOOK ``````````````````````````````````````````````````````````````````` -->
+
+  <input name="animation" type="hidden">
+  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i
+        class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
+  <input name="cookieData" type="hidden" data-cookie-colorText='#424a4d' data-cookie-colorBg='rgba(251, 193, 239, 0.99)'
+    data-cookie-colorButton='#ffc7f1' data-cookie-colorLink='#ffc7e8' data-cookie-underlineLink='true'
+    data-cookie-text="We use cookies to give you the best experience. ">
+
+    <div class="container-footer">
+      <div class="footer">
+        <div class="address">
+          <h2>Ιωάννα Λινού</h2>
+          <p>Κωνσταντινουπόλεως 5 (4ος όροφος)</p>
+          <p>Πάτρα, 12345</p>
+          <p><strong>T:</strong> 2251123456 - 6598745215</p>
+          <p><strong>E-mail:</strong> temp1@gmail.com</p><br>
+        </div>
+        <div class="information">
+          <a href="">More information</a> | <a href="">Terms and conditions</a>
+          <br>
+          <form action="/action_page.php">
+            <a class="contact" id="idcontact">Επικοινωνία</a>
+            <br>
+            <label for="fname">Όνομα</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+            <label for="lname">Επίθετο</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+  
+            <label for="subject">Θέμα</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        <div class="socials">
+          <a href="https://www.facebook.com/Health-and-Diet-1182540145277143/" class="fa fa-facebook"></a>
+          <a href="https://twitter.com/lifestylesoln" class="fa fa-twitter"></a>
+          <a href="https://www.instagram.com/calories.tips/?hl=el" class="fa fa-instagram"></a>
+          <a href="https://gr.pinterest.com/todayshow/healthy-eating/" class="fa fa-pinterest"></a>
+        </div>
+      </div>
+    </div>
+
+</body>
+<script src="/src/script.js"></script>
+
+</html>
